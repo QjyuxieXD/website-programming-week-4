@@ -141,11 +141,21 @@ p {
 
 
 
-img {
+img,
+video {
   display: block;
   max-width: 100%;
   height: auto;
   border-radius: var(--radius);
+}
+
+pre {
+  overflow-x: auto;
+}
+
+a,
+p {
+  overflow-wrap: anywhere;
 }
 
 table {
