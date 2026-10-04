@@ -38,6 +38,26 @@ main {
   padding-block: var(--space-3);
 }
 
+.page-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: flex-start;
+}
+
+.page-layout > main {
+  flex: 1 1 36rem;
+  min-width: 0;
+}
+
+.page-layout > aside {
+  flex: 1 1 16rem;
+  padding: var(--space-2);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
 h1,
 h2,
 h3 {
@@ -85,6 +105,30 @@ p {
   text-align: center;
 }
 
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.card-list > .card {
+  flex: 1 1 16rem;
+}
+
+.card--featured {
+  position: relative;
+  padding-block-start: 3rem;
+}
+
+.badge {
+  position: absolute;
+  inset-block-start: 0.75rem;
+  inset-inline-end: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  color: #ffffff;
+  background: var(--color-primary);
+  border-radius: var(--radius);
+}
 
 .card img {
   margin-inline: auto;
